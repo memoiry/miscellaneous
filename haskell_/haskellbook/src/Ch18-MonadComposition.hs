@@ -1,0 +1,181 @@
+
+import Test.QuickCheck
+import Test.QuickCheck.Checkers
+import Test.QuickCheck.Classes
+import Control.Applicative
+import Data.Monoid
+import Data.Functor
+import Control.Monad (join, (>=>))
+
+
+mcomp :: (Monad m, Functor m) => (b -> m c) -> (a -> m b) -> a -> m c
+mcomp f g a = join (f <$> (g a))
+
+mcomp'' :: (Monad m, Functor m) => (b -> m c) -> (a -> m b) -> a -> m c
+mcomp'' f g a = g a >>= f
+
+sayHi :: String -> IO String
+sayHi greeting = do
+  putStrLn greeting
+  getLine
+
+readM :: Read a => String -> IO a
+readM = return . read
+
+getAge :: String -> IO Int
+getAge = sayHi >=> readM
+
+askForAge :: IO Int
+askForAge = getAge "Hello! How old are you? "
+
+-- 18.7 Chapter exercises
+
+-- 1. Nope
+
+data Nope a = NopeDotJpg deriving (Eq, Show)
+
+instance Functor Nope where
+    fmap _ _ = NopeDotJpg
+
+instance Applicative Nope where
+    pure _ = NopeDotJpg
+    _ <*> _ = NopeDotJpg
+
+instance Monad Nope where
+    return = pure
+    _ >>= _ = NopeDotJpg
+
+instance Arbitrary a => Arbitrary (Nope a) where
+  arbitrary = genNope
+
+genNope :: Gen (Nope a)
+genNope = return NopeDotJpg
+
+instance Eq a => EqProp (Nope a) where (=-=) = eq
+
+-- 2. Yes, I changed the name
+
+data PEither b a = Left a | Right b deriving (Eq, Show)
+
+instance Functor (PEither b) where
+  fmap f (Main.Left a) = Main.Left (f a)
+  fmap f (Main.Right b) = Main.Right b
+
+instance Applicative (PEither b) where
+  pure = Main.Left
+  Main.Left _ <*> Main.Right x = Main.Right x
+  Main.Left f <*> Main.Left x = Main.Left (f x)
+  Main.Right x <*> _ = Main.Right x
+
+instance Monad (PEither b) where
+  return = pure
+  Main.Left a >>= f = f a
+  Main.Right b >>= _ = Main.Right b
+
+instance (Arbitrary b, Arbitrary a) => Arbitrary (PEither b a) where
+  arbitrary = genPEither
+
+genPEither :: (Arbitrary b, Arbitrary a) => Gen (PEither b a)
+genPEither = do
+  b <- arbitrary
+  a <- arbitrary
+  elements [Main.Right b, Main.Left a]
+
+instance (Eq b, Eq a) => EqProp (PEither b a) where (=-=) = eq
+
+-- 3. Identity
+
+newtype Identity a = Identity a deriving (Eq, Ord, Show)
+
+instance Functor Identity where
+  fmap f (Identity x) = Identity (f x)
+
+instance Applicative Identity where
+  pure = Identity
+  Identity f <*> Identity x = Identity (f x)
+
+instance Monad Identity where
+  return = pure
+  Identity x >>= f = f x
+
+instance Arbitrary a => Arbitrary (Identity a) where
+  arbitrary = genId
+
+genId :: Arbitrary a => Gen (Identity a)
+genId = do
+  x <- arbitrary
+  return $ Identity x
+
+instance Eq a => EqProp (Identity a) where (=-=) = eq
+
+-- 4. List
+
+data List a = Nil | Cons a (List a) deriving (Eq, Show)
+
+instance Functor List where
+  fmap _ Nil = Nil
+  fmap f (Cons h t) = Cons (f h) (fmap f t)
+
+append :: List a -> List a -> List a
+append Nil xs = xs
+append (Cons x xs) ys = Cons x (append xs ys)
+
+instance Applicative List where
+  pure = undefined
+  (<*>) = undefined
+
+instance Monad List where
+  return x = Cons x Nil
+  Nil >>= _ = Nil
+  Cons h t >>= f = append (f h) (t >>= f)
+
+instance Arbitrary a => Arbitrary (List a) where
+  arbitrary = genList
+
+genList :: Arbitrary a => Gen (List a)
+genList = do
+  h <- arbitrary
+  t <- genList
+  frequency [(3, return $ Cons h t),
+             (1, return Nil)]
+
+instance Eq a => EqProp (List a) where (=-=) = eq
+
+-- main
+
+type I = Int
+
+main :: IO ()
+main = do
+  putStr "\n-- Nope"
+  quickBatch $ monad (undefined :: Nope (I, I, I))
+  putStr "\n-- PEither"
+  quickBatch $ monad (undefined :: PEither I (I, I, I))
+  putStr "\n-- Identity"
+  quickBatch $ monad (undefined :: Identity (I, I, I))
+  putStr "\n-- List"
+  quickBatch $ monad (undefined :: List (I, I, I))
+
+-- Functions
+
+j :: Monad m => m (m a) -> m a
+j = (=<<) id
+
+l1 :: (Functor m, Monad m) => (a -> b) -> m a -> m b
+l1 = fmap
+
+l2 :: (Applicative m, Monad m) => (a -> b -> c) -> m a -> m b -> m c
+l2 = liftA2
+
+a :: (Applicative m, Monad m) => m a -> m (a -> b) -> m b
+a = flip (<*>)
+
+meh :: (Functor m, Monad m) => [a] -> (a -> m b) -> m [b]
+meh [] _ = return []
+meh (x:xs) f = do
+  x' <- f x
+  fmap ((:) x') (meh xs f)
+
+flipType :: (Functor m, Monad m) => [m a] -> m [a]
+flipType = (flip meh) id
+
