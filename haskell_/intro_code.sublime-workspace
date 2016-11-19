@@ -1,0 +1,716 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inser",
+				"insertSort"
+			],
+			[
+				"Int",
+				"Int"
+			],
+			[
+				"hanio",
+				"hanioHelper"
+			],
+			[
+				"hani",
+				"hanioHelper"
+			],
+			[
+				"dj",
+				"djflag"
+			],
+			[
+				"de",
+				"delay1"
+			],
+			[
+				"read",
+				"read_data"
+			],
+			[
+				"read_",
+				"read_byte"
+			],
+			[
+				"write",
+				"write_byte"
+			],
+			[
+				"addr",
+				"addrset"
+			],
+			[
+				"I2",
+				"I2CStop"
+			],
+			[
+				"scl",
+				"SCL"
+			],
+			[
+				"cost",
+				"cost_t"
+			],
+			[
+				"Cos",
+				"Cost_time"
+			],
+			[
+				"flag",
+				"flag_key_pause"
+			],
+			[
+				"p_",
+				"p_unit"
+			],
+			[
+				"count",
+				"count__temp"
+			],
+			[
+				"key_",
+				"key_word"
+			],
+			[
+				"flage",
+				"flag_key_set"
+			],
+			[
+				"Init_",
+				"Init_DS1302"
+			],
+			[
+				"for",
+				"forall"
+			],
+			[
+				"gra",
+				"grad_tanh2"
+			],
+			[
+				"grad",
+				"grad_tanh\tstatement"
+			],
+			[
+				"In",
+				"Integer"
+			],
+			[
+				"fac",
+				"factorial"
+			],
+			[
+				"iN",
+				"Int"
+			],
+			[
+				"su",
+				"SupervisedDataSet"
+			],
+			[
+				"train",
+				"train_size"
+			],
+			[
+				"bic",
+				"bic_matrix"
+			],
+			[
+				"plot",
+				"plot_acf"
+			],
+			[
+				"pre",
+				"predict"
+			],
+			[
+				"x",
+				"X"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++11/C++11.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"iju",
+				"IJulia: Set as working dir"
+			],
+			[
+				"ijulia",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"haskel",
+				"SublimeHaskell: Apply to selection list"
+			],
+			[
+				"haskell",
+				"Set Syntax: Haskell"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"ver",
+				"Set Syntax: Verilog"
+			],
+			[
+				"verilog",
+				"Set Syntax: Verilog"
+			],
+			[
+				"veri",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"contrao",
+				"Package Control: Add Channel"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"c++",
+				"Set Syntax: C++11"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"ju",
+				"Set Syntax: Julia"
+			],
+			[
+				"julia",
+				"Set Syntax: Julia"
+			],
+			[
+				"pep8",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"python3",
+				"Set Syntax: Python3"
+			],
+			[
+				"ipy",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"irb",
+				"SublimeREPL: Ruby IRB (deprecated)"
+			],
+			[
+				"Ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"clisp",
+				"SublimeREPL: GNU Clisp"
+			],
+			[
+				"rub",
+				"SublimeREPL: Ruby"
+			],
+			[
+				"scal",
+				"Set Syntax: Scala"
+			],
+			[
+				"scala",
+				"Set Syntax: Scala"
+			],
+			[
+				"haske",
+				"SublimeREPL: Haskell"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ha",
+				"SublimeREPL: Haskell"
+			],
+			[
+				"hask",
+				"SublimeREPL: Haskell"
+			],
+			[
+				"ipython",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"octave",
+				"SublimeREPL: Octave"
+			],
+			[
+				"repl",
+				"SublimeREPL: Ruby IRB (deprecated)"
+			],
+			[
+				"mat",
+				"SublimeREPL: Matlab"
+			],
+			[
+				"has",
+				"SublimeREPL: Haskell"
+			],
+			[
+				"ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"anaco",
+				"Anaconda: Vagrant Enable"
+			],
+			[
+				"subli",
+				"Sublime-IJulia: Enter"
+			],
+			[
+				"jul",
+				"Set Syntax: Julia"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"late",
+				"Set Syntax: LaTeX Memoir"
+			],
+			[
+				"latextool",
+				"LaTeXTools: Reset user settings to default"
+			],
+			[
+				"latext",
+				"LaTeXTools: Reset user settings to default"
+			],
+			[
+				"LaTeXTools: ",
+				"LaTeXTools: Toggle focus (PDF/editor)"
+			],
+			[
+				"latextools",
+				"LaTeXTools: Build cache for LaTeX packages"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX Memoir"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"open iju",
+				"Sublime-IJulia: Open New IJulia Console"
+			],
+			[
+				"rust",
+				"Set Syntax: Rust"
+			],
+			[
+				"tmpl",
+				"Tmpl: Create python"
+			],
+			[
+				"tmpl:",
+				"Tmpl: Create python"
+			],
+			[
+				"",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = ‘2deb499853c4371624f5a07e27c334aa’ + ‘bf8c4e67d14fb0525ba4f89698a6d7e1′; pf = ‘Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( ‘http://packagecontrol.io/’ + pf.replace(‘ ‘, ‘%20′)).read(); dh = hashlib.sha256(by).hexdigest(); print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), ‘wb’ ).write(by)",
+			"import urllib2,os; pf=’Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), ‘wb’ ).write( urllib2.urlopen( ‘http://sublime.wbond.net/’ +pf.replace( ‘ ‘,’%20′ )).read()); print( ‘Please restart Sublime Text to finish installation’)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/xuguodong/Desktop/prac_code/haskell/sort.hs",
+		"/Users/xuguodong/Desktop/prac_code/haskell/dec2bi.hs",
+		"/Users/xuguodong/Desktop/prac_code/haskell/sort",
+		"/Users/xuguodong/Desktop/prac_code/haskell/test.go",
+		"/Users/xuguodong/Desktop/prac_code/haskell/roman.hs",
+		"/town.hs",
+		"/Users/xuguodong/Desktop/999.jpg",
+		"/Users/xuguodong/sm.py",
+		"/Users/xuguodong/Desktop/hello.hs",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/IJulia/Sublime-IJulia.sublime-settings",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/User/Sublime-IJulia.sublime-settings",
+		"/Users/xuguodong/Documents/bash/template.cpp",
+		"/Users/xuguodong/Documents/bash/test.sh",
+		"/Users/xuguodong/Desktop/learn/show_me_the_code/0000/0000.py",
+		"/Users/xuguodong/Documents/haskell_pro/text.hs",
+		"/#include <iostream>",
+		"/Users/xuguodong/Downloads/Patch/64-bit/Connection Patcher.bat",
+		"/Users/xuguodong/hello.v",
+		"/Users/xuguodong/test.v",
+		"/Users/xuguodong/test_h.v",
+		"/Users/xuguodong/Desktop/untitled.cpp",
+		"/Users/xuguodong/Desktop/hello.cpp",
+		"/Users/xuguodong/Documents/code/c++/taxiaa.c",
+		"/Users/xuguodong/Hexo/node_modules/nunjucks/src/lib.js",
+		"/Users/xuguodong/Documents/code/c++/main.c",
+		"/Users/xuguodong/Documents/code/c++/savedata.c",
+		"/Users/xuguodong/Documents/code/c++/disptime.c",
+		"/Users/xuguodong/Documents/code/c++/init.c",
+		"/Users/xuguodong/Documents/code/c++/cost.c",
+		"/Users/xuguodong/Documents/code/c++/music_play.c",
+		"/Users/xuguodong/Documents/code/c++/taxi.c",
+		"/Users/xuguodong/Downloads/whuteot.user.js",
+		"/Users/xuguodong/Documents/code/c++/taxic.c",
+		"/Users/xuguodong/Documents/code/c++/Taximeter.c",
+		"/Users/xuguodong/Documents/code/c++/display.h",
+		"/Users/xuguodong/Documents/code/c++/cost.h",
+		"/Users/xuguodong/Documents/code/c++/count.h",
+		"/Users/xuguodong/Documents/code/c++/priceset.h",
+		"/Users/xuguodong/Documents/code/c++/key.h",
+		"/Users/xuguodong/Documents/code/c++/disptime.h",
+		"/Users/xuguodong/Documents/code/c++/ds1302.h",
+		"/Users/xuguodong/Documents/code/c++/ch451.h",
+		"/Users/xuguodong/Documents/code/c++/init.h",
+		"/Users/xuguodong/Documents/code/c++/priceset.c",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/xuguodong/python-laser-tracker/laser_tracker/laser_tracker.py",
+		"/Users/xuguodong/Downloads/rbnd-toycity-part1-master/lib/app.rb",
+		"/Users/xuguodong/Documents/code/c++/hello.cpp",
+		"/Users/xuguodong/Documents/code/haskell/hello.hs",
+		"/Users/xuguodong/Documents/code/python/mymodel.py",
+		"/Users/xuguodong/Documents/code/python/hello_tf.py",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/xuguodong/Downloads/funsets/src/test/scala/funsets/FunSetSuite.scala",
+		"/Users/xuguodong/Downloads/funsets/src/main/scala/funsets/FunSets.scala",
+		"/Users/xuguodong/Documents/code/python/grad_tanh.py",
+		"/Users/xuguodong/Desktop/code/python/flask_.py",
+		"/Users/xuguodong/Desktop/code/ruby/02day.rb",
+		"/Users/xuguodong/Desktop/code/ruby/random_number.rb",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/xuguodong/Desktop/code/djanggo/test/config.py",
+		"/Users/xuguodong/Desktop/code/djanggo/data/parse.py",
+		"/Users/xuguodong/Desktop/code/djanggo/src/web_dev_tutorial/settings.py",
+		"/Users/xuguodong/Desktop/code/djangoo/src/web_dev_tutorial/settings.py",
+		"/Users/xuguodong/Desktop/code/src-code-for-full-stack-web-platform-publish-branch/src/web_dev_tutorial/settings.py",
+		"/Users/xuguodong/Hexo/themes/next/source/js/motion_global.js",
+		"/Users/xuguodong/Hexo/themes/next/source/js/motion_fallback.js",
+		"/Users/xuguodong/Desktop/code/javascripting/catsAreAwesome.js",
+		"/Users/xuguodong/Desktop/code/python pro/prac.py",
+		"/Users/xuguodong/mxnet/example/image-classification/train_mnist.py",
+		"/Users/xuguodong/Desktop/Github/julia/solve-.jl",
+		"/Users/xuguodong/Desktop/Github/julia/exercise.py",
+		"/Users/xuguodong/Desktop/Github/julia/count_pi.jl",
+		"/Users/xuguodong/Desktop/999.py",
+		"/Users/xuguodong/Desktop/arima.py",
+		"/Users/xuguodong/Desktop/net.py",
+		"/Users/xuguodong/Desktop/442.py",
+		"/Users/xuguodong/Downloads/plot_kernel_ridge_regression.py",
+		"/Users/xuguodong/Desktop/zz.py",
+		"/Users/xuguodong/Desktop/Github/tutorial/tutorial/spiders/dmoz_spider.py",
+		"/Users/xuguodong/Desktop/Github/tutorial/tutorial/items.py",
+		"/Users/xuguodong/Desktop/Github/tutorial/tutorial/import scrapy.py",
+		"/Users/xuguodong/Hexo/auto-git-push",
+		"/Users/xuguodong/Downloads/plot_phase_unwrap.py",
+		"/Users/xuguodong/Downloads/plot_nonlocal_means.py",
+		"/Users/xuguodong/Downloads/plot_orb.py",
+		"/Users/xuguodong/Desktop/Github/latex/WE.tex",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/xuguodong/Desktop/Github/latex/untitled.tex",
+		"/Users/xuguodong/Downloads/scatter_demo.py",
+		"/Users/xuguodong/Downloads/annotation_demo2.py",
+		"/Users/xuguodong/Desktop/123.py",
+		"/Users/xuguodong/Desktop/Github/leetcode/python/Two Sum/two sum.py",
+		"/Users/xuguodong/.ipython/profile_default/startup/test.py",
+		"/Users/xuguodong/anaconda/pkgs/boto-2.39.0-py27_0/lib/python2.7/site-packages/boto/pyami/startup.py",
+		"/Users/xuguodong/Desktop/untitled.jl",
+		"/Users/xuguodong/projects/guessing_game/Cargo.toml",
+		"/Users/xuguodong/projects/guessing_game/src/main.rs",
+		"/Users/xuguodong/projects/hello_wolrd/Cargo.toml",
+		"/Users/xuguodong/projects/hello_wolrd/src/main.rs",
+		"/Users/xuguodong/Desktop/code/python/test.py",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/SublimeTmpl/Main.sublime-menu",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/User/SublimeTmpl.sublime-settings",
+		"/Users/xuguodong/Desktop/tsne_python/untitled.py",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/User/untitled.sublime-build",
+		"/Users/xuguodong/Desktop/tsne_python/testclass.cpp",
+		"/Users/xuguodong/Desktop/tsne_python/tsne.py",
+		"/Users/xuguodong/wikiSpider/wikiSpider/spiders/articleSpider.py",
+		"/Users/xuguodong/wikiSpider/wikiSpider/items.py",
+		"/Users/xuguodong/Desktop/code/图床/sm.py",
+		"/Users/xuguodong/Hexo/themes/yilia/source/css/_partial/article.styl",
+		"/Users/xuguodong/Library/Application Support/Alfred 2/Alfred.alfredpreferences/workflows/user.workflow.8850E87F-8038-4A99-8840-8AE41D979DC2/net.py",
+		"/Users/xuguodong/net.py",
+		"/Users/xuguodong/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/xuguodong/Desktop/233.py",
+		"/Users/xuguodong/test.hs",
+		"/Users/xuguodong/Desktop/hello.vhdl",
+		"/Users/xuguodong/1.cpp"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"p2",
+			"p0",
+			"sound_play",
+			"L",
+			"p",
+			"sda",
+			"date_bruff",
+			"data_bruff",
+			"sda",
+			"linting",
+			"p",
+			"to_",
+			"sidebartoggle",
+			"sidebartogglemotion",
+			"sidebartoggle",
+			"displaySidebar",
+			"display",
+			"sidebar",
+			"model",
+			"X",
+			"xk",
+			"ind",
+			"kr",
+			"forecast",
+			"builder",
+			"uesr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.haskell_sublime_load":
+	{
+		"height": 100.0
+	},
+	"output.sublime_haskell_error_panel":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "intro_code.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
