@@ -49,3 +49,14 @@ sameParityRe (x1:x2:xs) | odd x1  = if odd x2 then x2 : sameParityRe (x1:xs) els
                       | even x1 = if even x2 then x2 : sameParityRe (x1:xs) else sameParityRe (x1:xs)
 
 
+-- gcd
+
+gcd1 :: Integer -> Integer -> Integer
+gcd1 a b | sam == 0 = b
+         | otherwise = gcd1 b sam 
+        where sam = a `mod` b
+
+
+
+
+
